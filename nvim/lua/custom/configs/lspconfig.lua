@@ -30,8 +30,7 @@ lspconfig.emmet_ls.setup {
 }
 
 -- TAILWIND LSP
-lspconfig.tailwindCSS.setup {
+lspconfig.tailwindcss.setup {
   on_attach = on_attach,
   capabilities = capabilities,
-  filetypes = { "html", "javascriptreact", "typescriptreact", "vue" },
 }
