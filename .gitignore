@@ -1,0 +1,14 @@
+coc/
+configstore/
+emacs/
+fish/
+flutter/
+github-copilot/
+helix/
+iterm2/
+kitty/
+nvimBAK/
+simple-update-notifier/
+yarn/
+zed/
+memos.json
