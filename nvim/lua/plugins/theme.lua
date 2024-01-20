@@ -3,7 +3,7 @@ return {
     "ellisonleao/gruvbox.nvim",
     config = true,
     opts = {
-      transparent_mode = true,
+      transparent_mode = false,
     },
   },
   {
@@ -13,7 +13,7 @@ return {
     config = function()
       require("catppuccin").setup({
         flavour = "mocha",
-        transparent_background = true,
+        transparent_background = false,
         background = {
           dark = "mocha",
           light = "latte",
