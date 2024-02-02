@@ -14,4 +14,8 @@ end
 vim.keymap.set("n", "<c-\\>", lazyterm, { nowait = true })
 vim.keymap.set("t", "<C-\\>", "<cmd>close<cr>", { nowait = true })
 
+-- Markdown Preview Toggle
 vim.keymap.set("n", "<leader>mp", "<cmd>MarkdownPreviewToggle<CR>", { nowait = true })
+
+-- Zen Mode Toggle
+vim.keymap.set("n", "<leader>kz", "<cmd>ZenMode<CR>", { nowait = true })
