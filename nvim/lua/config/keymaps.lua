@@ -10,5 +10,8 @@ vim.keymap.set("n", "<leader>wo", "<cmd>WorkspacesOpen <CR>", { nowait = true })
 local lazyterm = function()
   Util.terminal(nil, { cwd = Util.root() })
 end
+
 vim.keymap.set("n", "<c-\\>", lazyterm, { nowait = true })
 vim.keymap.set("t", "<C-\\>", "<cmd>close<cr>", { nowait = true })
+
+vim.keymap.set("n", "<leader>mp", "<cmd>MarkdownPreviewToggle<CR>", { nowait = true })
