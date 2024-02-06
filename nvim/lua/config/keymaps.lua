@@ -19,3 +19,6 @@ vim.keymap.set("n", "<leader>mp", "<cmd>MarkdownPreviewToggle<CR>", { nowait = t
 
 -- Zen Mode Toggle
 vim.keymap.set("n", "<leader>kz", "<cmd>ZenMode<CR>", { nowait = true })
+
+-- OIL nvim
+vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })

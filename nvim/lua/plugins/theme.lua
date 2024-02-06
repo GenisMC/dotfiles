@@ -3,7 +3,8 @@ return {
     "ellisonleao/gruvbox.nvim",
     config = true,
     opts = {
-      transparent_mode = false,
+      transparent_mode = true,
+      dim_inactive = true,
     },
   },
   {
@@ -16,22 +17,10 @@ return {
     config = function()
       require("catppuccin").setup({
         flavour = "mocha",
-        transparent_background = false,
+        transparent_background = true,
         background = {
           dark = "mocha",
           light = "latte",
-        },
-        custom_highlights = function(colors)
-          return {
-            Identifier = { fg = colors.red },
-            Structure = { fg = colors.red },
-          }
-        end,
-        styles = {
-          loops = { "italic" },
-          keywords = { "bold" },
-          comments = { "italic" },
-          functions = { "italic" },
         },
       })
     end,
@@ -39,7 +28,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "nord",
+      colorscheme = "catppuccin",
     },
   },
 }
