@@ -60,6 +60,15 @@ return {
         tsserver = {},
         rust_analyzer = {},
         tailwindcss = {},
+        pyright = {
+          settings = {
+            python = {
+              analysis = {
+                extraPaths = { "/opt/odoo17/framework/" },
+              },
+            },
+          },
+        },
       },
     },
   },
