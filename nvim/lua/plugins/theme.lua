@@ -8,6 +8,15 @@ return {
     },
   },
   {
+    "hylophile/flatwhite.nvim",
+  },
+  {
+    "sainnhe/everforest",
+  },
+  {
+    "sainnhe/sonokai",
+  },
+  {
     "arcticicestudio/nord-vim",
   },
   {
@@ -28,7 +37,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
+      colorscheme = "everforest",
     },
   },
 }
