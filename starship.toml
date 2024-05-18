@@ -1,0 +1,67 @@
+# REFERENCE:
+# https://starship.rs/config/
+# https://www.nerdfonts.com/cheat-sheet
+
+add_newline = false
+command_timeout = 2000
+
+right_format = """$time"""
+
+[line_break]
+disabled = true
+
+[character]
+disabled = true
+
+[package]
+disabled = true
+
+[directory]
+style = "bold cyan"
+
+[git_branch]
+style = "bold bright-purple"
+symbol = "󰘬 "
+
+[git_status]
+ahead = "[](bright-purple)[$count](white)"
+behind = "[](cyan)[$count](white)"
+conflicted = '[=$count](yellow)'
+deleted = '[✘$count](bright-black)'
+diverged = "[](cyan)[$ahead_count](white)[](bright-purple)[$behind_count](white)"
+modified = '[*$count](red)'
+renamed = "[»$count](bright-purple)"
+staged = "[+$count](green)"
+stashed = "[\\$$count](yellow)"
+style = "bold bright-purple"
+untracked = "[?$count](cyan)"
+
+[git_commit]
+only_detached = true
+style = "bright-black"
+format = "[$hash]($style) "
+
+[ruby]
+disabled = true
+format = '[$symbol($version )]($style)'
+symbol = " "
+
+[nodejs]
+format = '[$symbol($version )]($style)'
+symbol = "󰎙 "
+
+[python]
+format = '[$symbol($version )]($style)'
+symbol = "󰌠 "
+
+[shell]
+disabled = true
+style = 'red'
+bash_indicator = '\$'
+fish_indicator = '󰈺'
+zsh_indicator = '=>'
+
+[time]
+disabled = false
+format = '[󱑎 $time]($style) '
+style = "bright-black"
