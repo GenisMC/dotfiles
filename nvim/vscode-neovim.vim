@@ -43,12 +43,13 @@ nnoremap <leader>d "_d
 vnoremap <leader>d "_d
 
 nnoremap <Leader>sf <Cmd>call VSCodeNotify("workbench.action.quickOpen")<CR>
-nnoremap <Leader>e <Cmd>call VSCodeNotify("workbench.action.toggleSidebarVisibility")<CR>
+" nnoremap <Leader>e <Cmd>call VSCodeNotify("workbench.action.toggleSidebarVisibility")<CR>
+nnoremap <Leader>e <Cmd>call VSCodeNotify("workbench.view.explorer")<CR>
 nnoremap <Leader>ca <Cmd>call VSCodeNotify("editor.action.quickFix")<CR>
 nnoremap <Leader>rn <Cmd>call VSCodeNotify("editor.action.rename")<CR>
 nnoremap <Leader>f <Cmd>call VSCodeNotify("editor.action.formatDocument")<CR>
 nnoremap <Leader>q <Cmd>call VSCodeNotify("workbench.action.closeActiveEditor")<CR>
-nnoremap <Leader>w <Cmd>call VSCodeNotify("workbench.action.save")<CR>
+nnoremap <Leader>w <Cmd>call VSCodeNotify("workbench.action.files.save")<CR>
 
 nnoremap <silent> gh <Cmd>call VSCodeCall('editor.action.showHover')<CR>
 nnoremap <silent> gd <Cmd>call VSCodeCall('editor.action.revealDefinition')<CR>

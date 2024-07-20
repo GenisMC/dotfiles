@@ -1,3 +1,7 @@
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+# source ~/.zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+source ~/.zsh/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+
 # Powermode
 eval "$(starship init zsh)"
 
@@ -25,6 +29,9 @@ alias nvimdir="cd ~/.config/nvim"
 alias tmuxcfg="nvim ~/.config/tmux/tmux.conf"
 alias workspace="cd ~/Documents/Code"
 alias theme="nvim ~/.config/starship.toml"
+alias ll='ls -la'
+alias ssh="kitty +kitten ssh"
+alias dotfiles="cd ~/.dotfiles"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -39,3 +46,5 @@ export PATH="$PATH:$HOME/.rvm/bin"
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+
