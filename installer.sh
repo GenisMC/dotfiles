@@ -22,3 +22,7 @@ ln -sn "$(pwd)/.zsh" "$HOME/.zsh"
 git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.zsh/zsh-autosuggestions
 git clone https://github.com/marlonrichert/zsh-autocomplete.git ~/.zsh/zsh-autocomplete
 git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git ~/.zsh/fast-syntax-highlighting
+
+curl -sS https://starship.rs/install.sh | sh
+
+sudo chsh -s /usr/bin/zsh
