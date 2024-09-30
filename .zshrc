@@ -32,6 +32,7 @@ alias theme="nvim ~/.config/starship.toml"
 alias ll='ls -la'
 alias ssh="kitty +kitten ssh"
 alias dotfiles="cd ~/.dotfiles"
+alias sshconfig="nvim ~/.ssh/config"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -48,3 +49,5 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 
+
+PATH=~/.console-ninja/.bin:$PATH
