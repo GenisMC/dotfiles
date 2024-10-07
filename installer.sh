@@ -7,6 +7,7 @@ fi
 
 rm -rf ~/.zsh
 rm -rf ~/.config/kitty
+mv -r ~/.config/zed ~/.config/zed_bak
 rm -rf ~/.config/tmux
 rm -rf ~/.config/starship.toml
 mv ~/.config/nvim ~/.config/nvim_bck
@@ -20,6 +21,7 @@ ln -sn "$(pwd)/kitty" "$HOME/.config/kitty"
 ln -sn "$(pwd)/tmux" "$HOME/.config/tmux"
 ln -sn "$(pwd)/nvim" "$HOME/.config/nvim"
 ln -sn "$(pwd)/.zsh" "$HOME/.zsh"
+ln -sn "$(pwd)/zed" "$HOME/.config/zed
 
 git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.zsh/zsh-autosuggestions
 git clone https://github.com/marlonrichert/zsh-autocomplete.git ~/.zsh/zsh-autocomplete

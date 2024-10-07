@@ -1,0 +1,9 @@
+{
+  "Jsdoc type": {
+    "prefix": "anno",
+    "body": [
+      " /** @type {${1:string}} */"
+    ],
+    "description": "Jsdoc type annotation"
+  }
+}
