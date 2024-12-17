@@ -5,6 +5,19 @@ source ~/.zsh/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 # Powermode
 eval "$(starship init zsh)"
 
+# FZF
+eval "$(fzf --zsh)"
+
+export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_ALT_C_COMMAND="fd --type=d --hidden --strip-cwd-prefix --exclude .git"
+
+export FZF_DEFAULT_OPTS="--height 50% --layout=default --border --color=hl:#2dd4bf"
+export FZF_TMUX_OPTS=" -p90%,70% "
+
+export FZF_CTRL_T_OPTS="--preview 'bat --color=always -n --line-range :500 {}'"
+export FZF_ALT_C_OPTS="--preview 'eza --tree --color=always {} | head -200'"
+
 export PATH=~/Development/flutter/bin:$PATH
 export ANDROID_HOME=/opt/android
 export PATH=$PATH:$ANDROID_HOME/emulator
@@ -29,7 +42,9 @@ alias nvimdir="cd ~/.config/nvim"
 alias tmuxcfg="nvim ~/.config/tmux/tmux.conf"
 alias workspace="cd ~/Documents/Code"
 alias theme="nvim ~/.config/starship.toml"
-alias ll='ls -la'
+alias ls='eza --grid --color=always --icons=always --no-user'
+alias ll='eza --long --color=always --icons=always --no-user'
+# alias ll='ls -la'
 alias ssh="kitty +kitten ssh"
 alias dotfiles="cd ~/.dotfiles"
 alias sshconfig="nvim ~/.ssh/config"
@@ -50,4 +65,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 
 
-PATH=~/.console-ninja/.bin:$PATH
+
+# Added by Windsurf
+export PATH="/Users/genismc/.codeium/windsurf/bin:$PATH"
