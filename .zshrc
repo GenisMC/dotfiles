@@ -45,7 +45,7 @@ alias theme="nvim ~/.config/starship.toml"
 alias ls='eza --grid --color=always --icons=always --no-user'
 alias ll='eza --long --color=always --icons=always --no-user'
 # alias ll='ls -la'
-alias ssh="kitty +kitten ssh"
+# alias ssh="kitty +kitten ssh"
 alias dotfiles="cd ~/.dotfiles"
 alias sshconfig="nvim ~/.ssh/config"
 

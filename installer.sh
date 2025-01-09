@@ -22,6 +22,7 @@ ln -sn "$(pwd)/tmux" "$HOME/.config/tmux"
 ln -sn "$(pwd)/nvim" "$HOME/.config/nvim"
 ln -sn "$(pwd)/.zsh" "$HOME/.zsh"
 ln -sn "$(pwd)/zed" "$HOME/.config/zed
+ln -sn "$(pwd)/ghostty" "$HOME/.config/ghostty"
 
 git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.zsh/zsh-autosuggestions
 git clone https://github.com/marlonrichert/zsh-autocomplete.git ~/.zsh/zsh-autocomplete
